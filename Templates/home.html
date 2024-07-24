@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="C:\Users\ragav\PycharmProjects\pythonProject1\pythonProject1\ML Projects\FlaskApp\static\styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Implant Finder - Identify Implants</title>
+  </head>
+  <body>
+    <header>
+        <img src="C:\Users\ragav\PycharmProjects\pythonProject1\pythonProject1\ML Projects\FlaskApp\static\menu.png" class="menu-icon">
+        <img src="C:\Users\ragav\Downloads\th (9).jpg" alt="Implant Finder Logo" class="logo">
+        <h1 id="hehe">Implant Finder</h1>
+    </header>
+  <nav>
+    <ul>
+      <li><a href="index.html"><img src="C:\Users\ragav\PycharmProjects\pythonProject1\pythonProject1\ML Projects\FlaskApp\static\home.png" class="home-icon"></a></li>
+      <li><a href="Login.html"><img src="C:\Users\ragav\PycharmProjects\pythonProject1\pythonProject1\ML Projects\FlaskApp\static\logout.png" class="home-icon"></a></li>
+    </ul>
+  </nav>
+    <main>
+        <section class="form-section">
+            <h2>Implants Identification</h2>
+                    <div class="input-container">
+        <label for="patient-id" class="input-label">Patient ID</label>
+        <input type="text" id="patient-name" class="input-field">
+    </div>
+    <div class="input-container">
+        <label for="xray-upload" class="input-label">Select X-ray Image</label>
+        <input type="file" id="xray-upload" class="input-field">
+    </div>
+                <button type="button" id="find-btn">Predict</button>
+
+        </section>
+        <section class="result-section">
+
+            <div id="result-box" class="result-box">
+                <!-- Result will be dynamically loaded here -->             <h2>Result</h2>
+            </div>
+        </section>
+    </main>
+    <script src="C:\Users\ragav\PycharmProjects\pythonProject1\pythonProject1\ML Projects\FlaskApp\static\preload.js"></script>
+    <script src="C:\Users\ragav\PycharmProjects\pythonProject1\pythonProject1\ML Projects\FlaskApp\static\renderer.js"></script>
+  </body>
+</html>

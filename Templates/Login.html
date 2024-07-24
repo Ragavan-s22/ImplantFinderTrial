@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implant Finder - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="C:\Users\ragav\PycharmProjects\pythonProject1\pythonProject1\ML Projects\FlaskApp\static\styles1.css" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="F:\RP\Intern\ImplantFinder\arkenea1.jpg" alt="Arkenea Logo" class="arkenea-logo">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="email">
+                        <i class="fa fa-user"></i>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="password">
+                        <i class="fa fa-key"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <i class="fa fa-eye"></i>
+                    </label>
+                </div>
+                <button type="submit">Log in</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email === 'admin@gmail.com' && password === '1234') {
+                window.location.href = 'index.html';
+            } else {
+                alert('Invalid email or password');
+            }
+        });
+    </script>
+</body>
+</html>
